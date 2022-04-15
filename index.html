@@ -18,19 +18,19 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!--Шапка-->
     <header class="header">
-      <div class="container">
-        <!-- nav -->
+      <!-- <div class="container">
+        nav
         <nav class="nav">
           <a href="" class="logo nav-logo link"
             >Web<span class="logo__span">Studio</span></a
           >
-          <!-- menu -->
+          menu
           <ul class="menu-list list">
             <li class="menu-list__item">
               <a
@@ -50,7 +50,7 @@
           </ul>
         </nav>
         <ul class="contact__list list">
-          <!-- contact -->
+          contact
           <li class="contact__item-mail">
             <a href="mailto:info@devstudio.com" class="contact__mail link">
               <svg class="contact__icon" width="16" height="12">
@@ -66,7 +66,7 @@
             >
           </li>
         </ul>
-      </div>
+      </div> -->
     </header>
 
     <!--Основа-->
@@ -176,11 +176,20 @@
           <h2 class="command__title">Наша команда</h2>
           <ul class="command-list list">
             <li class="command-list__item">
-              <img
-                src="./img/igor.jpg"
-                alt="Игорь_Демьяненко,Product_Designer"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/igor-mob-1x-min.jpg 1x,
+                    ./img/igor-mob-2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/igor-mob-1x-min.jpg"
+                  alt="Игорь_Демьяненко,Product_Designer"
+                />
+              </picture>
+
               <div class="command-list__box">
                 <h3 class="command-list__title">Игорь Демьяненко</h3>
                 <p lang="en" class="command-list__text">Product Designer</p>
@@ -346,7 +355,7 @@
         </div>
       </section>
       <!-- Клиенты -->
-      <section class="clients">
+      <!-- <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -394,12 +403,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--Подвал-->
-    <footer class="footer">
-      <div class="container">
-        <!-- Навигация -->
+    <!-- <footer class="footer"> -->
+    <!-- <div class="container">
+        Навигация
         <div class="footer-nav">
           <a href="" class="logo footer-nav__logo link"
             >Web<span class="footer-nav__span">Studio</span></a
@@ -428,9 +437,9 @@
               </li>
             </ul>
           </address>
-        </div>
-        <!-- Соц. Сети -->
-        <div class="join">
+        </div> -->
+    <!-- Соц. Сети -->
+    <!-- <div class="join">
           <h2 class="join__title">присоединяйтесь</h2>
           <ul class="soc-list join-list__socials list">
             <li class="soc-list__item">
@@ -461,40 +470,11 @@
                 </svg>
               </a>
             </li>
-          </ul>
-          <!-- <ul class="join-list__socials">
-            <li class="join-list__item">
-              <a href="" class="join-list__link">
-                <svg class="join-list__svg" width="20" height="20">
-                  <use href="./img/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="" class="join-list__link">
-                <svg class="join-list__svg" width="20" height="20">
-                  <use href="./img/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="" class="join-list__link">
-                <svg class="join-list__svg" width="20" height="20">
-                  <use href="./img/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="" class="join-list__link">
-                <svg class="join-list__svg" width="20" height="20">
-                  <use href="./img/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul> -->
-        </div>
-        <!-- Рассылка -->
-        <div class="subscribe">
+          </ul> 
+         
+        </div>-->
+    <!-- Рассылка -->
+    <!-- <div class="subscribe">
           <form action="" class="subscribe-form">
             <div class="mail">
               <label for="mail" class="mail__label">Подпишитесь на рассылку</label>
@@ -514,8 +494,8 @@
             </button>
           </form>
         </div>
-      </div>
-    </footer>
+      </div>-->
+    <!-- </footer>  -->
     <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -570,7 +550,9 @@
             </div>
 
             <div class="form-application__coments">
-              <label for="coments" class="form-application__label">Коментарий</label>
+              <label for="coments" class="form-application__label"
+                >Коментарий</label
+              >
               <textarea
                 name="coments"
                 id="coments"
@@ -579,7 +561,7 @@
                 class="form-application__textarea"
               ></textarea>
             </div>
-               <!-- license -->
+            <!-- license -->
             <div class="form-license">
               <label class="form-license__label">
                 <input
@@ -596,7 +578,9 @@
             </div>
 
             <div class="modal-btn">
-              <button type="submit" class="modal-btn__btn button">Отправить</button>
+              <button type="submit" class="modal-btn__btn button">
+                Отправить
+              </button>
             </div>
           </div>
         </form>

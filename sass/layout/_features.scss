@@ -1,34 +1,60 @@
 .features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
 
-    &__list {
-        display: flex;
-        margin-right: -30px;
+  &__list {
+    margin-bottom: -30px;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
     }
-    
-    &__item {
-        width: calc(100% / 4 - 30px);
-        margin-right: 30px;
+
+    @include desktop {
+      display: flex;
+      margin-bottom: 0;
     }
-    
-    &__svg {
-        @include flex(flex, center, center);
-        margin-bottom: 30px;
-        height: 120px;
-        background-color: var(--button-bg-color);
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    @include tablet {
+      width: calc(100% / 2 - 30px);
+      margin-right: 30px;
     }
-    
-    &__title {
-        color: var(--second-text-color);
-        text-transform: uppercase;
-        margin-bottom: 10px;
-        @include font(14px, null, 1.14, 0.03em);
+
+    @include desktop {
+      width: calc(100% / 4 - 30px);
     }
-    
-    &__after {
-        @include font(14px, null, 1.71, null);
+  }
+
+  &__svg {
+    @include flex(flex, center, center);
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: var(--button-bg-color);
+  }
+
+  &__title {
+    color: var(--second-text-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    @include font(14px, null, 1.14, null);
+
+    @include tablet {
+      text-align-last: left;
     }
+  }
+
+  &__after {
+    @include font(14px, null, 1.71, null);
+  }
 }
-
-
