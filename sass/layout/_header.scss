@@ -1,0 +1,18 @@
+.header {
+    min-height: 80px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+
+    .container{
+        @include flex(flex, center, null);
+    }
+    .nav {
+        @include flex(flex, center, null);
+    }
+}
+
+.nav-logo {
+    margin-right: 93px;
+}
+

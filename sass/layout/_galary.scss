@@ -1,0 +1,36 @@
+.galary {
+    padding-bottom: 94px;
+
+    &__title {
+        color: var(--second-text-color);
+        @include font(36px, null, 1.16, null);
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    &__list {
+        display: flex;
+    }
+    
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    
+    &__app {
+        position: relative;
+    }
+    
+    &__text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 370px;
+        height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);
+        color: var(--primery-text-color);
+        @include font(14px, 700, 1.14, null);
+        text-align: center;
+        text-transform: uppercase;
+        @include flex(flex, center, center);
+    }
+}

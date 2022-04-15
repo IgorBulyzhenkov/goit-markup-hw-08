@@ -1,0 +1,92 @@
+.form-application {
+    margin: 40px 40px;
+
+    &__title {
+        @include font(20px, null, 1.15, 0.03em);
+        color: var(--first-modal-text-color);
+        margin-bottom: 12px;
+    }
+    
+    &__field {
+        position: relative;
+        margin-top: 4px;
+        @include font(12px, null, 1.17, 0.01em);
+        transition: var(--time-cubic-bezier);
+    
+        .form-application__textarea::placeholder {
+            @include font(12px, null, 1.17, 0.01em);
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
+    
+    &__label {
+        @include flex(flex, center, null);
+        margin-top: 10px;
+        @include font(12px, null, 1.17, 0.01em);
+        margin-top: 10px;
+    }
+    
+    &__input {
+        height: 40px;
+        width: 100%;
+        @include font(14px, null, null, 0.03em);
+        padding-left: 42px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transition: var(--time-cubic-bezier);
+        margin-top: 4px;
+    
+        &:focus {
+            border-color: var(--accent-color);
+            outline: none;
+        }
+    }
+    
+    
+    
+    
+    
+    &__icon {
+        position: absolute;
+        left: 12px;
+        bottom: 50%;
+        transition: fill var(--time-cubic-bezier);
+        transform: translateY(50%);
+    
+        .form-application__input:focus+& {
+            fill: var(--accent-color);
+        }
+    
+        &:focus {
+            border-color: var(--accent-color);
+        }
+    }
+    
+    
+    
+    &__coments {
+        @include font(12px, null, 1.17, 0.01em);
+        margin-top: 10px;
+    }
+    
+    &__textarea {
+        @include font(14px, null, null, 0.03em);
+        resize: none;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        width: 448px;
+        height: 120px;
+        transition: var(--time-cubic-bezier);
+        padding: 12px 16px;
+        margin-top: 4px;
+    
+        &:focus {
+            border-color: var(--accent-color);
+            outline: none;
+        }
+    }
+}
+
+
+
+

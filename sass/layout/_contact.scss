@@ -1,0 +1,27 @@
+.contact__list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact__tel,
+.contact__mail {
+    @include flex(flex, center, null);
+    color: var(--first-text-color);
+    @include font(null, 500, 1.14, 0.02em);
+    transition: var(--time-cubic-bezier);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    }
+}
+
+.contact__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contact__tel {
+    margin-left: 50px;
+}

@@ -1,0 +1,38 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__title {
+        @include font(36px, null, 1.16, null);
+        text-align: center;
+        color: var(--second-text-color);
+    }
+    
+    &-list {
+        display: flex;
+        margin-right: -30px;
+    }
+    
+    &-list__item {
+        width: calc(100% / 6 - 30px);
+        margin-right: 30px;
+        margin-top: 50px;
+    }
+    
+    &-list__link {
+        @include flex(flex, center, center);
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        fill: var(--first-icon-color);
+        border-radius: 4px;
+        transition: var(--time-cubic-bezier);
+    
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+            border: 1px solid #2196F3;
+            border-radius: 4px;
+        }
+    }
+}
+

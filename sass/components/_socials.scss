@@ -1,0 +1,26 @@
+.soc-list {
+    @include flex(flex, null, center);
+    margin-top: 16px;
+    &__link {
+        @include flex(flex, center, center);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        fill: var(--first-icon-color);
+        transition: var(--time-cubic-bezier);
+    
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+            fill: var(--second-icon-color);
+        }
+    }
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,41 @@
+.footer {
+    background-color: var(--futter-bg-color);
+    min-height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .container {
+        display: flex;
+    }
+}
+
+.footer-nav__span {
+    color: var(--second-logo-color);
+}
+
+.footer-list__list {
+    margin-top: 20px;
+}
+
+.footer-list__item {
+    margin-top: 9px;
+}
+
+.footer-list__link {
+    color: var(--primery-text-color);
+    font-style: normal;
+    @include font(14px, null, 1.71, null);
+}
+
+.footer-list__mail,
+.footer-list__tel {
+    color: var(--second-address-color);
+    font-style: normal;
+    @include font(14px, null, 1.71, null); 
+    transition: var(--time-cubic-bezier);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}

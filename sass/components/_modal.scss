@@ -1,0 +1,53 @@
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    transition: var(--time-cubic-bezier), opacity 300ms, visibility 300ms;
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    
+        .modal {
+            transform: translate(-50%, -50%) rotateY(0) scale(0.5);
+        }
+    }
+}
+
+.modal {
+    position: absolute;
+    width: 528px;
+    min-height: 581px;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: var(--body-bg-color);
+    transform: translate(-50%, -50%) rotateY(360deg) scale(1);
+    transition: transform var(--time-cubic-bezier);
+    &__btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        fill: #000000;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        background-color: var(--personal-bg-color);
+        width: 30px;
+        height: 30px;
+        transition: var(--time-cubic-bezier);
+    }
+    &__btn:hover,
+    &__btn:focus {
+        fill: var(--accent-color);
+    }
+}
+
+
+
