@@ -490,7 +490,7 @@ img {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/lmg-tab-2x.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/lmg-tab-2x-min.jpg);
   }
 }
 
@@ -672,7 +672,7 @@ img {
 
 .command {
   background-color: var(--comand-bg-color);
-  min-height: 648px;
+  min-height: 622px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -699,6 +699,18 @@ img {
   }
 }
 
+.command-list {
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .command-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .command-list {
     display: flex;
@@ -707,17 +719,32 @@ img {
 
 .command-list__item {
   background-color: var(--personal-bg-color);
-  max-width: 270px;
-  min-height: 368px;
+  width: 450px;
+  min-height: 622px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 }
 
-.command-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .command-list__item {
+    width: calc(100% / 2 - 30px);
+    margin-right: 30px;
+    min-width: 354px;
+    height: 536px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command-list__item {
+    width: calc(100% / 4 - 30px);
+    max-width: 270px;
+    height: 428px;
+  }
 }
 
 .command-list__box {
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
 }

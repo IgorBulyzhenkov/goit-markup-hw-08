@@ -1,6 +1,6 @@
 .command {
   background-color: var(--comand-bg-color);
-  min-height: 648px;
+  min-height: 622px;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -23,24 +23,42 @@
   }
 
   &-list {
+    margin-bottom: -30px;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
+    }
+
     @include desktop {
       display: flex;
     }
 
     &__item {
       background-color: var(--personal-bg-color);
-      max-width: 270px;
-      min-height: 368px;
+      width: 450px;
+      min-height: 622px;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
+      margin-bottom: 30px;
 
-      &:not(:last-child) {
+      @include tablet {
+        width: calc(100% / 2 - 30px);
         margin-right: 30px;
+        min-width: 354px;
+        height: 536px;
+      }
+
+      @include desktop {
+        width: calc(100% / 4 - 30px);
+        max-width: 270px;
+        height: 428px;
       }
     }
 
     &__box {
+      width: 100%;
       padding-top: 30px;
       padding-bottom: 30px;
     }
