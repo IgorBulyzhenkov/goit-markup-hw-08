@@ -178,25 +178,20 @@
             <li class="command-list__item">
               <picture>
                 <source
-                  srcset="
-                    ./img/igor-mob-1x-min.jpg 1x,
-                    ./img/igor-mob-2x-min.jpg 2x
-                  "
-                  media="(min-width: 320px)"
+                  srcset="./img/igor-1x.jpg 1x, ./img/igor-2x-min.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="
-                    ./img/igor-tab-1x-min.jpg 1x,
-                    ./img/igor-tab-2x-min.jpg 2x
-                  "
+                  srcset="./img/igor-tab-1x.jpg 1x, ./img/igor-tab-2x.jpg 2x"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./img/igor-1x-min.jpg 1x, ./img/igor-2x-min.jpg 2x"
-                  media="(min-width: 1200px)"
+                  srcset="./img/igor-mob-1x.jpg 1x, ./img/igor-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
                 />
+
                 <img
-                  src="./img/igor-1x-min.jpg"
+                  src="./img/igor-1x.jpg"
                   alt="Игорь_Демьяненко,Product_Designer"
                 />
               </picture>
@@ -239,11 +234,8 @@
             <li class="command-list__item">
               <picture>
                 <source
-                  srcset="
-                    ./img/olga-mob-1x-min.jpg 1x,
-                    ./img/olga-mob-2x-min.jpg 2x
-                  "
-                  media="(min-width:320px)"
+                  srcset="./img/olga-1x-min.jpg 1x, ./img/olga-2x-min.jpg 2x"
+                  media="(min-width:1200px)"
                 />
                 <source
                   srcset="
@@ -253,9 +245,13 @@
                   media="(min-width:768px)"
                 />
                 <source
-                  srcset="./img/olga-1x-min.jpg 1x, ./img/olga-2x-min.jpg 2x"
-                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/olga-mob-1x-min.jpg 1x,
+                    ./img/olga-mob-2x-min.jpg 2x
+                  "
+                  media="(min-width:480px)"
                 />
+
                 <img
                   src="./img/olga-1x-min.jpg"
                   alt="Ольга_Репина,Frontend_Developer"
@@ -302,10 +298,10 @@
               <picture>
                 <source
                   srcset="
-                    ./img/nikolay-mob-1x-min.jpg 1x,
-                    ./img/nikolay-mob-2x-min.jpg 2x
+                    ./img/nikolay-1x-min.jpg 1x,
+                    ./img/nikolay-2x-min.jpg 2x
                   "
-                  media="(min-width:320px)"
+                  media="(min-width:1200px)"
                 />
                 <source
                   srcset="
@@ -316,11 +312,12 @@
                 />
                 <source
                   srcset="
-                    ./img/nikolay-1x-min.jpg 1x,
-                    ./img/nikolay-2x-min.jpg 2x
+                    ./img/nikolay-mob-1x-min.jpg 1x,
+                    ./img/nikolay-mob-2x-min.jpg 2x
                   "
-                  media="(min-width:1200px)"
+                  media="(min-width:480px)"
                 />
+
                 <img
                   src="./img/nikolay-1x-min.jpg"
                   alt="Николай_Тарасов,Marketing"
@@ -366,25 +363,26 @@
               <picture>
                 <source
                   srcset="
-                    ./img/mihail-mob-1x-min.jpg 1x,
-                    ./img/mihail-mob-2x-min.jpg 2x
+                    ./img/mihail-1x-min.jpg 1x,
+                    ./img/mihail-2x-min.jpg 2x
                   "
-                  media="(min-with:320px)"
+                  media="(min-width:1200px)"
                 />
                 <source
                   srcset="
                     ./img/mihail-tab-1x-min.jpg 1x,
                     ./img/mihail-tab-2x-min.jpg 2x
                   "
-                  media="(min-with:768px)"
+                  media="(min-width:768px)"
                 />
                 <source
                   srcset="
-                    ./img/mihail-1x-min.jpg 1x,
-                    ./img/mihail-2x-min.jpg 2x
+                    ./img/mihail-mob-1x-min.jpg 1x,
+                    ./img/mihail-mob-2x-min.jpg 2x
                   "
-                  media="(min-with:1200px)"
+                  media="(min-width:480px)"
                 />
+
                 <img
                   src="./img/mihail-1x-min.jpg"
                   alt="Михаил_Ермаков,UI_Designer"
@@ -431,7 +429,7 @@
         </div>
       </section>
       <!-- Клиенты -->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -479,12 +477,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!--Подвал-->
-    <!-- <footer class="footer"> -->
-    <!-- <div class="container">
-        Навигация
+    <footer class="footer">
+      <div class="container">
+        <!-- Навигация -->
         <div class="footer-nav">
           <a href="" class="logo footer-nav__logo link"
             >Web<span class="footer-nav__span">Studio</span></a
@@ -513,9 +511,9 @@
               </li>
             </ul>
           </address>
-        </div> -->
-    <!-- Соц. Сети -->
-    <!-- <div class="join">
+        </div>
+        <!-- Соц. Сети -->
+        <div class="join">
           <h2 class="join__title">присоединяйтесь</h2>
           <ul class="soc-list join-list__socials list">
             <li class="soc-list__item">
@@ -546,14 +544,15 @@
                 </svg>
               </a>
             </li>
-          </ul> 
-         
-        </div>-->
-    <!-- Рассылка -->
-    <!-- <div class="subscribe">
+          </ul>
+        </div>
+        <!-- Рассылка -->
+        <div class="subscribe">
           <form action="" class="subscribe-form">
             <div class="mail">
-              <label for="mail" class="mail__label">Подпишитесь на рассылку</label>
+              <label for="mail" class="mail__label"
+                >Подпишитесь на рассылку</label
+              >
               <input
                 type="email"
                 name="email"
@@ -570,8 +569,8 @@
             </button>
           </form>
         </div>
-      </div>-->
-    <!-- </footer>  -->
+      </div>
+    </footer>
     <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">

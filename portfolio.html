@@ -18,20 +18,20 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!--Шапка-->
-    <header class="header">
-      <div class="container">
-        <!-- nav -->
-        <nav class="nav">
+    <!-- <header class="header">
+      <div class="container"> -->
+    <!-- nav -->
+    <!-- <nav class="nav">
           <a href="" class="logo nav-logo link"
             >Web<span class="logo__span">Studio</span></a
-          >
-          <!-- menu -->
-          <ul class="menu-list list">
+          > -->
+    <!-- menu -->
+    <!-- <ul class="menu-list list">
             <li class="menu-list__item">
               <a
                 href="./index.html"
@@ -49,9 +49,9 @@
             </li>
           </ul>
         </nav>
-        <ul class="contact__list list">
-          <!-- contact -->
-          <li class="contact__item-mail">
+        <ul class="contact__list list"> -->
+    <!-- contact -->
+    <!-- <li class="contact__item-mail">
             <a href="mailto:info@devstudio.com" class="contact__mail link">
               <svg class="contact__icon" width="16" height="12">
                 <use href="./img/icons.svg#icon-envelope"></use></svg
@@ -67,7 +67,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <!--Основа-->
     <main class="main">
       <div class="container">
@@ -79,23 +79,53 @@
               <button type="button" class="filters-list__button">Все</button>
             </li>
             <li class="filters-list__item">
-              <button type="button" class="filters-list__button">Приложения</button>
+              <button type="button" class="filters-list__button">
+                Приложения
+              </button>
             </li>
             <li class="filters-list__item">
               <button type="button" class="filters-list__button">Дизайн</button>
             </li>
             <li class="filters-list__item">
-              <button type="button" class="filters-list__button">Веб-сайты</button>
+              <button type="button" class="filters-list__button">
+                Веб-сайты
+              </button>
             </li>
             <li class="filters-list__item">
-              <button type="button" class="filters-list__button">Маркетинг</button>
+              <button type="button" class="filters-list__button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <!-- card -->
           <ul class="card-list list">
             <li class="card-list__item">
               <div class="card-list__thumb">
-                <img src="./img/laptop.jpg" alt="laptop" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/laptop-1x.jpg 1x,
+                      ./img/laptop-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/laptop-tab-1x.jpg 1x,
+                      ./img/laptop-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/laptop-mob-1x.jpg 1x,
+                      ./img/laptop-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./img/laptop-1x.jpg" alt="laptop" />
+                </picture>
+
                 <p class="card-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -109,7 +139,31 @@
             </li>
             <li class="card-list__item">
               <div class="card-list__thumb">
-                <img src="./img/basketball.jpg" alt="basketball" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/basketball-1x.jpg 1x,
+                      ./img/basketball-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/basketball-tab-1x.jpg 1x,
+                      ./img/basketball-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/basketball-mob-1x.jpg 1x,
+                      ./img/basketball-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./img/basketball-1x.jpg" alt="basketball" />
+                </picture>
+
                 <p class="card-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -117,13 +171,36 @@
                 </p>
               </div>
               <div class="card-list__box">
-                <h2 class="card-list__title">Постер New Orlean vs Golden Star</h2>
+                <h2 class="card-list__title">
+                  Постер New Orlean vs Golden Star
+                </h2>
                 <p class="card-list__after">Дизайн</p>
               </div>
             </li>
             <li class="card-list__item">
               <div class="card-list__thumb">
-                <img src="./img/seafood.jpg" alt="seafood" width="370" />
+                <picture>
+                  <source
+                    srcset="./img/seafood-1x.jpg 1x, ./img/seafood-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/seafood-tab-1x.jpg 1x,
+                      ./img/seafood-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/seafood-mob-1x.jpg 1x,
+                      ./img/seafood-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./img/seafood-1x.jpg" alt="seafood" />
+                </picture>
+
                 <p class="card-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -137,7 +214,31 @@
             </li>
             <li class="card-list__item">
               <div class="card-list__thumb">
-                <img src="./img/headphones.jpg" alt="headphones" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/headphones-1x.jpg 1x,
+                      ./img/headphones-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/headphones-tab-1x.jpg 1x,
+                      ./img/headphones-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/headphones-mob-1x.jpg 1x,
+                      ./img/headphones-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./img/headphones-1x.jpg" alt="headphones" />
+                </picture>
+
                 <p class="card-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -151,7 +252,27 @@
             </li>
             <li class="card-list__item">
               <div class="card-list__thumb">
-                <img src="./img/boxes.jpg" alt="boxes" width="370" />
+                <picture>
+                  <source
+                    srcset="./img/boxes-1x.jpg 1x, ./img/boxes-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/boxes-tab-1x.jpg 1x,
+                      ./img/boxes-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/boxes-mob-1x.jpg 1x,
+                      ./img/boxes-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./img/boxes-1x.jpg" alt="boxes" />
+                </picture>
                 <p class="card-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -165,7 +286,28 @@
             </li>
             <li class="card-list__item">
               <div class="card-list__thumb">
-                <img src="./img/monitor.jpg" alt="monitor" width="370" />
+                <picture>
+                  <source
+                    srcset="./img/monitor-1x.jpg 1x, ./img/monitor-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/monitor-tab-1x.jpg 1x,
+                      ./img/monitor-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/monitor-mob-1x.jpg 1x,
+                      ./img/monitor-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./img/monitor-1x.jpg" alt="monitor" />
+                </picture>
+
                 <p class="card-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -179,7 +321,22 @@
             </li>
             <li class="card-list__item">
               <div class="card-list__thumb">
-                <img src="./img/book.jpg" alt="book" width="370" />
+                <picture>
+                  <source
+                    srcset="./img/book-1x.jpg 1x, ./img/book-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./img/book-tab-1x.jpg 1x, ./img/book-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./img/book-mob-1x.jpg 1x, ./img/book-mob-2x.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./img/book-1x.jpg" alt="book" />
+                </picture>
+
                 <p class="card-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -193,7 +350,28 @@
             </li>
             <li class="card-list__item">
               <div class="card-list__thumb">
-                <img src="./img/label.jpg" alt="label" width="370" />
+                <picture>
+                  <source
+                    srcset="./img/label-1x.jpg 1x, ./img/label-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/label-tab-1x.jpg 1x,
+                      ./img/label-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/label-mob-1x.jpg 1x,
+                      ./img/label-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./img/label-1x.jpg" alt="label" />
+                </picture>
+
                 <p class="card-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -207,11 +385,28 @@
             </li>
             <li class="card-list__item">
               <div class="card-list__thumb">
-                <img
-                  src="./img/business.jpg"
-                  alt="laptop and hands"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./img/business-1x.jpg 1x, ./img/business-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/business-tab-1x.jpg 1x,
+                      ./img/business-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/business-mob-1x.jpg 1x,
+                      ./img/business-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./img/business-1x.jpg" alt="laptop and hands" />
+                </picture>
+
                 <p class="card-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
