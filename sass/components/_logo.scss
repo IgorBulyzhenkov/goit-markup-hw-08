@@ -1,7 +1,10 @@
 .logo {
     color: var(--first-logo-color);
     font-family: 'Raleway';
-    @include font(26px, 700, 1.19, null);
+    @include font(24px, 700, 1.17, null);
+    @include desktop {
+        @include font(26px, 700, 1.19, null);
+    }
 
     &__span {
         color: var(--span-logo-color);
