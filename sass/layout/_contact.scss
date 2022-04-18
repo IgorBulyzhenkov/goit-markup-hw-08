@@ -1,27 +1,40 @@
 .contact__list {
-    display: flex;
+  display: none;
+  @include tablet {
+    display: block;
     margin-left: auto;
+  }
+  @include desktop {
+    display: flex;
+  }
 }
 
 .contact__tel,
 .contact__mail {
-    @include flex(flex, center, null);
-    color: var(--first-text-color);
-    @include font(null, 500, 1.14, 0.02em);
-    transition: var(--time-cubic-bezier);
-    
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-        fill: var(--accent-color);
-    }
+  @include flex(flex, center, null);
+  color: var(--first-text-color);
+  @include font(12px, 500, 1.14, 0.02em);
+  transition: var(--time-cubic-bezier);
+  @include desktop {
+      font-size: 14px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
 
 .contact__icon {
-    margin-right: 10px;
-    fill: currentColor;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .contact__tel {
+  margin-top: 10px;
+  @include desktop {
+    margin-top: 0;
     margin-left: 50px;
+  }
 }

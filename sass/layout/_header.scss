@@ -1,20 +1,46 @@
 .header {
-  min-height: 80px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
+  @include tablet {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 
-  .container {
+  & > .container {
     @include flex(flex, center, null);
   }
 
-  @media screen and(min-width:1200px) {
-    .nav {
+  .nav {
+    display: none;
+    @include tablet {
       @include flex(flex, center, null);
+    }
+  }
+
+  &-open-btn {
+    @include tablet {
+      display: none;
+    }
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+
+    &:hover {
+      fill: var(--accent-color);
     }
   }
 }
 
 .nav-logo {
-  margin-right: 93px;
+  @include tablet {
+    margin-right: 88px;
+  }
+  @include desktop {
+    margin-right: 93px;
+  }
 }

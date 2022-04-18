@@ -6,6 +6,7 @@
 
   @include tablet {
     margin-bottom: 30px;
+    justify-content: center;
   }
   @include desktop {
     margin-bottom: 50px;

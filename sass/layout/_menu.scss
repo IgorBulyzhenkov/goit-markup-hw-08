@@ -1,46 +1,48 @@
 .menu-list__item:not(:last-child) {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 .menu-list {
-    display: flex;
+  display: flex;
 
-    &__link {
-        color: var(--second-text-color);
-        @include font(null, 500, 1.14, 0.02em);
-        transition: var(--time-cubic-bezier);
+  &__link {
+    color: var(--second-text-color);
+    @include font(null, 500, 1.14, 0.02em);
+    transition: var(--time-cubic-bezier);
 
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &--current {
+    color: var(--accent-color);
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  &__link--current {
+    position: relative;
+    color: var(--accent-color);
+
+    @include tablet {
+      &::after {
+        content: " ";
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+        display: block;
+        top: 50px;
+        @include desktop {
+          top: 46px;
         }
+      }
     }
-    
-    &--current {
-        color: var(--accent-color);
-    }
-    
-    &__icon {
-        margin-right: 10px;
-        fill: currentColor;
-    }
-    
-    
-    
-    &__link--current {
-        position: relative;
-        color: var(--accent-color);
-
-        &::after {
-            content: " ";
-            position: absolute;
-            height: 4px;
-            width: 100%;
-            border-radius: 2px;
-            background-color: var(--accent-color);
-            display: block;
-            top: 46px;
-        }
-    }
-
+  }
 }

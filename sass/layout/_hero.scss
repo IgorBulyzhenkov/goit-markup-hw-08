@@ -1,70 +1,91 @@
 .hero {
-    background-color: var(--hero-bg-color);
-    padding-top: 118px;
-    padding-bottom: 118px;
+  background-color: var(--hero-bg-color);
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/lmg-mob-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/lmg-mob-2x.jpg);
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/lmg-tab-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/lmg-tab-2x-min.jpg);
+    }
+  }
+
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/lmg-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/lmg-2x.jpg);
+    }
+  }
+
+  &__title {
+    color: var(--primery-text-color);
+    @include font(26px, 900, 1.62, 0.06em);
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 360px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1600px;
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../img/lmg-mob-1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
-        background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../img/lmg-mob-2x.jpg);
-    }
-
-    @include tablet {
-        background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../img/lmg-tab-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../img/lmg-tab-2x-min.jpg);
-        }
-    }
+    margin-bottom: 30px;
 
     @include desktop {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../img/lmg-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../img/lmg-2x.jpg);
-        }
+      @include font(44px, 900, 1.36, 0.06em);
+      max-width: 696px;
     }
+  }
 
-    &__title {
-        color: var(--primery-text-color);
-        @include font(26px, 900, 1.62, 0.06em)
-        //
-        text-align: center;
-        text-transform: uppercase;
-        max-width: 360px;
-        // 
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-
-        @include desktop {
-            @include font(44px, 900, 1.36, 0.06em);
-            max-width: 696px;
-        }
-    }
-    
-    &__button {
-        margin-left: auto;
-        margin-right: auto;
-        height: 50px;
-        min-width: 200px;
-    }
+  &__button {
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    min-width: 200px;
+  }
 }
-

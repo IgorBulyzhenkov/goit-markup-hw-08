@@ -1,0 +1,75 @@
+.mob {
+  position: fixed;
+  top: 0;
+  background-color: var(--mob-menu-bg-color);
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  & > .container {
+    padding: 48px 83px 48px 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+.menu-mob-list {
+  @include font(40px, 500, 1.18, 0.02em);
+  &__link {
+    color: var(--mob-primery-text);
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.contact-mob__item-mail {
+  @include font(24px, 500, 1.16, 0.02em);
+}
+.contact-mob__mail {
+  color: var(--mob-secondary-text);
+}
+.contact-mob__item-tel {
+  @include font(34px, 500, 1.18, 0.02em);
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.contact-mob__tel {
+  color: var(--accent-color);
+}
+
+.mob-soc-list {
+  display: flex;
+  margin-top: 64px;
+  &__item {
+    @include font(18px, 500, 1.22, 0.02em);
+    & span {
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+    }
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  &__link {
+    color: var(--accent-color);
+  }
+}

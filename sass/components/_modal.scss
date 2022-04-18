@@ -33,6 +33,10 @@
     background-color: var(--body-bg-color);
     transform: translate(-50%, -50%) rotateY(360deg) scale(1);
     transition: transform var(--time-cubic-bezier);
+    @media screen and(max-width:479px) {
+        width: 90%;
+        
+    }
     @include desktop {
         width: 528px;
         min-height: 581px;
