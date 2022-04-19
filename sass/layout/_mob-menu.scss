@@ -11,6 +11,7 @@
     visibility: hidden;
   }
   & > .container {
+    position: relative;
     padding: 48px 83px 48px 40px;
     height: 100%;
     display: flex;
