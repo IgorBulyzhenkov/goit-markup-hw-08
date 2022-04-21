@@ -286,8 +286,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -543,12 +543,6 @@ img {
     border-radius: 2px;
     background-color: var(--accent-color);
     display: block;
-    top: 50px;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  .menu-list__link--current::after {
     top: 46px;
   }
 }
@@ -787,12 +781,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features__list {
-    display: flex;
   }
 }
 

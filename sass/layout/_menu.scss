@@ -38,10 +38,7 @@
         border-radius: 2px;
         background-color: var(--accent-color);
         display: block;
-        top: 50px;
-        @include desktop {
-          top: 46px;
-        }
+        top: 46px;
       }
     }
   }
